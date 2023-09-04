@@ -1,0 +1,41 @@
+{
+    "name": "wushunyi/aliyun-sdk-mns",
+    "description": "Aliyun MNS PHP SDK 阿里云官方 MNS composer包",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wu ShunYi",
+            "email": "wushunyi@vip.qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=5.3.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "ext-openssl": "*",
+        "ext-dom": "*",
+        "ext-simplexml": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "AliyunMNS\\": "AliyunMNS/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AliyunMNS\\Tests\\": "tests/",
+            "AliyunMNS\\Samples\\": "Samples/"
+        }
+    },"extra": {
+        "branch-alias": {
+            "dev-master": "master-dev"
+        }
+    },    
+    "suggest": {
+        "ext-openssl": "Allows working with https",
+        "ext-curl": "To send requests using cURL",
+        "ext-json": "Parse json"
+    }
+}

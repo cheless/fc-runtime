@@ -1,0 +1,19 @@
+Features: appcds,eagerappcds
+VM_Version: OpenJDK 64-Bit Server VM (11.0.14.13-AJDKfp2+0-Alibaba) for linux-amd64 JRE (11.0.14.13-AJDKfp2+0-Alibaba), built on Mar 24 2022 10:23:33 by "" with gcc 4.8.2 20140120 (Red Hat 4.8.2-15)
+Container_Image_ID: 
+JVM_Option_Count: 15
+-Xquickstart:path=/var/fc/runtime/java11/alibaba.quickstart.sharedcache
+-Xlog:quickstart:file=/tmp/alibaba.quickstart.log
+-XX:+IgnoreAppCDSDirCheck
+-Xmx1024m
+-Xms128m
+-XX:+UseSerialGC
+-Xshare:on
+-Djava.security.egd=file:/dev/./urandom
+--add-opens=java.base/java.io=ALL-UNNAMED
+-Dfc.runtime.rapis.client.lib.path=/var/fc/runtime/java11/_native_rapis_client.so
+-Dfc.func.code.path=/code/
+-Dfile.encoding=UTF-8
+-Dsun.jnu.encoding=UTF-8
+-Djava.class.path=/var/fc/runtime/java11
+-Dsun.java.command=com.aliyun.serverless.runtime.Bootstrap

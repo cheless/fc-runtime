@@ -1,0 +1,18 @@
+{
+    "name": "rsong/phprequest",
+    "description": "A light weight PHP http client implements PSR7, use socket/curl for sending requests.",
+    "keywords": ["php", "http", "request", "curl", "socket", "php http client"],
+    "license": "MIT",
+    "authors": [{
+        "name": "rsong",
+        "email": "ls_huster@163.com"
+    }],
+    "require": {
+        "php": ">=5.3",
+        "psr/http-message": "^1.0"
+    },
+    "autoload": {
+        "psr-4": { "EasyRequest\\": "src/" },
+        "files": ["src/helpers.php"]
+    }
+}
